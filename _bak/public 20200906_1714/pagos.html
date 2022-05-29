@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Confra - Pagos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="media/img/favicon.png">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+<h1>PAGOS ONLINE</h1>
+<p>Realiza tus pagos de forma segura</p>
+
+<!--Pagos de Prueba-->
+<div id = "boton-pagos-prueba">
+  <h2>Botón Pagos de Prueba</h2>
+  <form>
+    <script
+      src="https://checkout.wompi.co/widget.js"
+      data-render="button"
+      data-public-key="pub_test_zC4ppsD4PkZ9Yl4kX2bbM6b5bOMotmOs"
+      data-currency="COP"
+      data-amount-in-cents="100000000"
+      data-reference= "pruebas-1";
+      >
+    </script>
+  </form>
+</div>
+
+<!--Pagos Reales-->
+<div id = "boton-pagos-reales">
+  <h2>Botón Pagos Reales</h2>
+  <form>
+    <script
+      src="https://checkout.wompi.co/widget.js"
+      data-render="button"
+      data-public-key="pub_test_zC4ppsD4PkZ9Yl4kX2bbM6b5bOMotmOs"
+      data-currency="COP"
+      data-amount-in-cents="100000000"
+      data-reference= "producion-1";
+      >
+    </script>
+  </form>
+</div>
+
+
+
+</body>
+
+<footer><a href="index.html">Volver</a></footer>
+</html>
+
